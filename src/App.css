@@ -1,7 +1,47 @@
 .App {
   text-align: center;
 }
+.singleProduct {
+  border: 1px solid black;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  background-color: azure;
 
+}
+.catItem {
+  width: 20%;
+  margin: 20%;
+  border: 2px solid green;
+  display: inline;
+}
+#product_price{
+  background-color: cadetblue;
+}
+#product_id{
+  float: left;
+  margin: 20px;
+  border: 1px solid red;
+  width: 5%;
+}
+#product_category{
+  float: left;
+  margin: 20px;
+}
+#product_description{
+  background-color: violet;
+  border-radius: 2px;
+}
+#product_img{
+  height: 20%;
+  width: 20%;
+}
+img:hover{
+  transform: scale(1.02);
+}
+.categoryClass{
+  border: 1px solid red;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -25,7 +65,9 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: blue;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 @keyframes App-logo-spin {
