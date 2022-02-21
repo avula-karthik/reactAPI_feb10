@@ -6,7 +6,7 @@ const Product = (props) => {
             console.log(response.data.id);
             document.getElementById("product_id").textContent = `Id : ${response.data.id}`;
             document.getElementById("product_title").textContent = `${response.data.title}`
-            document.getElementById("product_price").textContent = `Price : ${response.data.price}`
+            document.getElementById("product_price").textContent = `Price : ${response.data.price} Rs.`
             document.getElementById("product_description").textContent = `${response.data.description}`
             document.getElementById("product_category").textContent = `Category :${response.data.category}`
             document.getElementById("product_img").src = `${response.data.image}`

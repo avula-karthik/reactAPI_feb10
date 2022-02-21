@@ -5,21 +5,22 @@ function Allproducts() {
     axios.get("https://fakestoreapi.com/products")
         .then((response) => {
             setProduct(response.data)
-            product.map((val, index) => {
-                return (
-                    <div className="singleProduct">
-                        <p id="product_id">{val.id}</p>
-                        <p id="product_price"> {val.price} </p>
-                        <p id="product_description"> {val.description} </p>
-
-                    </div>
-                )
-            })
-
         })
     return (
         <div>
-            <h1>Data Fetching...please wait</h1>
+            <h1>All available products</h1>
+            {
+                product.map((val, index) => {
+                    return (
+                        <div className="singleProduct" >
+                            <div id="product_id">Id : {val.id} </div>
+                            <h1 id="product_title">Title : {val.title}</h1>
+                            <h2 id="product_price">Price : {val.price} Rs.</h2>
+                            <div id="rating">Rating : {val.rating.rate} /5</div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
